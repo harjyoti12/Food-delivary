@@ -1,0 +1,107 @@
+.card{
+    margin-top: 100px;
+}
+
+.card-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: gray;
+    font-size: max(1vw,12px);
+}
+
+.card-items-item{
+    margin: 10px 0px;
+    color: black;
+}
+
+.card-items-item img{
+    width: 50px;
+}
+
+.card hr{
+    height: 1px;
+    background: #e2e2e2;
+    border: 0;
+}
+
+.cross{
+    cursor: pointer;
+}
+
+.card-bottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: max(12vw,20px);
+}
+
+.card-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-total-details{
+    display: flex;
+    justify-content: space-between;
+    counter-reset: #555;
+}
+
+.card-total hr{
+    margin: 10px 0px;
+}
+
+.card-total button{
+    border: 0;
+    color: white;
+    background: tomato;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-promo{
+    flex: 1;
+}
+
+.card-promo p{
+    color: #555;
+}
+
+.card-promo-input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eaeaea;
+    border-radius: 4px;
+}
+
+.card-promo-input input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding-left: 10px;
+}
+
+.card-promo-input button{
+    width: max(10vw,150px);
+    padding: 12px 5px;
+    background: black;
+    border: 0;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media(max-width:750px){
+    .card-bottom{
+        flex-direction: column-reverse;
+    }
+    .card-promo{
+        justify-content: start;
+    }
+}
